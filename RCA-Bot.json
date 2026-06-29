@@ -6,64 +6,8 @@
         "className": "",
         "data": {
           "sourceHandle": {
-            "dataType": "ChatInput",
-            "id": "ChatInput-u32z3",
-            "name": "message",
-            "output_types": [
-              "Message"
-            ]
-          },
-          "targetHandle": {
-            "fieldName": "issue_keys",
-            "id": "Prompt Template-qPGC3",
-            "inputTypes": [
-              "Message"
-            ],
-            "type": "str"
-          }
-        },
-        "id": "xy-edge__ChatInput-u32z3{œdataTypeœ:œChatInputœ,œidœ:œChatInput-u32z3œ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}-Prompt Template-qPGC3{œfieldNameœ:œissue_keysœ,œidœ:œPrompt Template-qPGC3œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
-        "selected": false,
-        "source": "ChatInput-u32z3",
-        "sourceHandle": "{œdataTypeœ:œChatInputœ,œidœ:œChatInput-u32z3œ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}",
-        "target": "Prompt Template-qPGC3",
-        "targetHandle": "{œfieldNameœ:œissue_keysœ,œidœ:œPrompt Template-qPGC3œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
-      },
-      {
-        "animated": false,
-        "className": "",
-        "data": {
-          "sourceHandle": {
-            "dataType": "Prompt Template",
-            "id": "Prompt Template-qPGC3",
-            "name": "prompt",
-            "output_types": [
-              "Message"
-            ]
-          },
-          "targetHandle": {
-            "fieldName": "url_input",
-            "id": "APIRequest-xNoVl",
-            "inputTypes": [
-              "Message"
-            ],
-            "type": "str"
-          }
-        },
-        "id": "xy-edge__Prompt Template-qPGC3{œdataTypeœ:œPrompt Templateœ,œidœ:œPrompt Template-qPGC3œ,œnameœ:œpromptœ,œoutput_typesœ:[œMessageœ]}-APIRequest-xNoVl{œfieldNameœ:œurl_inputœ,œidœ:œAPIRequest-xNoVlœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
-        "selected": false,
-        "source": "Prompt Template-qPGC3",
-        "sourceHandle": "{œdataTypeœ:œPrompt Templateœ,œidœ:œPrompt Template-qPGC3œ,œnameœ:œpromptœ,œoutput_typesœ:[œMessageœ]}",
-        "target": "APIRequest-xNoVl",
-        "targetHandle": "{œfieldNameœ:œurl_inputœ,œidœ:œAPIRequest-xNoVlœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
-      },
-      {
-        "animated": false,
-        "className": "",
-        "data": {
-          "sourceHandle": {
             "dataType": "APIRequest",
-            "id": "APIRequest-xNoVl",
+            "id": "APIRequest-x3OSv",
             "name": "data",
             "output_types": [
               "JSON"
@@ -71,7 +15,7 @@
           },
           "targetHandle": {
             "fieldName": "jira_json",
-            "id": "CustomComponent-YTptE",
+            "id": "JiraSearchParserComponent-4otwK",
             "inputTypes": [
               "Data",
               "JSON"
@@ -79,12 +23,12 @@
             "type": "other"
           }
         },
-        "id": "xy-edge__APIRequest-xNoVl{œdataTypeœ:œAPIRequestœ,œidœ:œAPIRequest-xNoVlœ,œnameœ:œdataœ,œoutput_typesœ:[œJSONœ]}-CustomComponent-YTptE{œfieldNameœ:œjira_jsonœ,œidœ:œCustomComponent-YTptEœ,œinputTypesœ:[œDataœ,œJSONœ],œtypeœ:œotherœ}",
+        "id": "reactflow__edge-APIRequest-x3OSv{œdataTypeœ:œAPIRequestœ,œidœ:œAPIRequest-x3OSvœ,œnameœ:œdataœ,œoutput_typesœ:[œJSONœ]}-JiraSearchParserComponent-4otwK{œfieldNameœ:œjira_jsonœ,œidœ:œJiraSearchParserComponent-4otwKœ,œinputTypesœ:[œDataœ,œJSONœ],œtypeœ:œotherœ}",
         "selected": false,
-        "source": "APIRequest-xNoVl",
-        "sourceHandle": "{œdataTypeœ:œAPIRequestœ,œidœ:œAPIRequest-xNoVlœ,œnameœ:œdataœ,œoutput_typesœ:[œJSONœ]}",
-        "target": "CustomComponent-YTptE",
-        "targetHandle": "{œfieldNameœ:œjira_jsonœ,œidœ:œCustomComponent-YTptEœ,œinputTypesœ:[œDataœ,œJSONœ],œtypeœ:œotherœ}"
+        "source": "APIRequest-x3OSv",
+        "sourceHandle": "{œdataTypeœ:œAPIRequestœ,œidœ:œAPIRequest-x3OSvœ,œnameœ:œdataœ,œoutput_typesœ:[œJSONœ]}",
+        "target": "JiraSearchParserComponent-4otwK",
+        "targetHandle": "{œfieldNameœ:œjira_jsonœ,œidœ:œJiraSearchParserComponent-4otwKœ,œinputTypesœ:[œDataœ,œJSONœ],œtypeœ:œotherœ}"
       },
       {
         "animated": false,
@@ -92,7 +36,7 @@
         "data": {
           "sourceHandle": {
             "dataType": "JiraSearchParserComponent",
-            "id": "CustomComponent-YTptE",
+            "id": "JiraSearchParserComponent-4otwK",
             "name": "parsed_text",
             "output_types": [
               "Message"
@@ -100,19 +44,19 @@
           },
           "targetHandle": {
             "fieldName": "jira_json",
-            "id": "Prompt Template-Vc6Ad",
+            "id": "Prompt Template-6ThMZ",
             "inputTypes": [
               "Message"
             ],
             "type": "str"
           }
         },
-        "id": "xy-edge__CustomComponent-YTptE{œdataTypeœ:œJiraSearchParserComponentœ,œidœ:œCustomComponent-YTptEœ,œnameœ:œparsed_textœ,œoutput_typesœ:[œMessageœ]}-Prompt Template-Vc6Ad{œfieldNameœ:œjira_jsonœ,œidœ:œPrompt Template-Vc6Adœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "id": "reactflow__edge-JiraSearchParserComponent-4otwK{œdataTypeœ:œJiraSearchParserComponentœ,œidœ:œJiraSearchParserComponent-4otwKœ,œnameœ:œparsed_textœ,œoutput_typesœ:[œMessageœ]}-Prompt Template-6ThMZ{œfieldNameœ:œjira_jsonœ,œidœ:œPrompt Template-6ThMZœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
         "selected": false,
-        "source": "CustomComponent-YTptE",
-        "sourceHandle": "{œdataTypeœ:œJiraSearchParserComponentœ,œidœ:œCustomComponent-YTptEœ,œnameœ:œparsed_textœ,œoutput_typesœ:[œMessageœ]}",
-        "target": "Prompt Template-Vc6Ad",
-        "targetHandle": "{œfieldNameœ:œjira_jsonœ,œidœ:œPrompt Template-Vc6Adœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
+        "source": "JiraSearchParserComponent-4otwK",
+        "sourceHandle": "{œdataTypeœ:œJiraSearchParserComponentœ,œidœ:œJiraSearchParserComponent-4otwKœ,œnameœ:œparsed_textœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "Prompt Template-6ThMZ",
+        "targetHandle": "{œfieldNameœ:œjira_jsonœ,œidœ:œPrompt Template-6ThMZœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
       },
       {
         "animated": false,
@@ -120,7 +64,7 @@
         "data": {
           "sourceHandle": {
             "dataType": "Prompt Template",
-            "id": "Prompt Template-Vc6Ad",
+            "id": "Prompt Template-6ThMZ",
             "name": "prompt",
             "output_types": [
               "Message"
@@ -128,19 +72,19 @@
           },
           "targetHandle": {
             "fieldName": "system_message",
-            "id": "MistralModel-WBUOf",
+            "id": "MistralModel-rqOP5",
             "inputTypes": [
               "Message"
             ],
             "type": "str"
           }
         },
-        "id": "xy-edge__Prompt Template-Vc6Ad{œdataTypeœ:œPrompt Templateœ,œidœ:œPrompt Template-Vc6Adœ,œnameœ:œpromptœ,œoutput_typesœ:[œMessageœ]}-MistralModel-WBUOf{œfieldNameœ:œsystem_messageœ,œidœ:œMistralModel-WBUOfœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "id": "reactflow__edge-Prompt Template-6ThMZ{œdataTypeœ:œPrompt Templateœ,œidœ:œPrompt Template-6ThMZœ,œnameœ:œpromptœ,œoutput_typesœ:[œMessageœ]}-MistralModel-rqOP5{œfieldNameœ:œsystem_messageœ,œidœ:œMistralModel-rqOP5œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
         "selected": false,
-        "source": "Prompt Template-Vc6Ad",
-        "sourceHandle": "{œdataTypeœ:œPrompt Templateœ,œidœ:œPrompt Template-Vc6Adœ,œnameœ:œpromptœ,œoutput_typesœ:[œMessageœ]}",
-        "target": "MistralModel-WBUOf",
-        "targetHandle": "{œfieldNameœ:œsystem_messageœ,œidœ:œMistralModel-WBUOfœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
+        "source": "Prompt Template-6ThMZ",
+        "sourceHandle": "{œdataTypeœ:œPrompt Templateœ,œidœ:œPrompt Template-6ThMZœ,œnameœ:œpromptœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "MistralModel-rqOP5",
+        "targetHandle": "{œfieldNameœ:œsystem_messageœ,œidœ:œMistralModel-rqOP5œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
       },
       {
         "animated": false,
@@ -148,7 +92,7 @@
         "data": {
           "sourceHandle": {
             "dataType": "MistralModel",
-            "id": "MistralModel-WBUOf",
+            "id": "MistralModel-rqOP5",
             "name": "text_output",
             "output_types": [
               "Message"
@@ -156,19 +100,19 @@
           },
           "targetHandle": {
             "fieldName": "rca_markdown",
-            "id": "CustomComponent-4TkZo",
+            "id": "RcaExporterComponent-KTH46",
             "inputTypes": [
               "Message"
             ],
             "type": "str"
           }
         },
-        "id": "xy-edge__MistralModel-WBUOf{œdataTypeœ:œMistralModelœ,œidœ:œMistralModel-WBUOfœ,œnameœ:œtext_outputœ,œoutput_typesœ:[œMessageœ]}-CustomComponent-4TkZo{œfieldNameœ:œrca_markdownœ,œidœ:œCustomComponent-4TkZoœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "id": "reactflow__edge-MistralModel-rqOP5{œdataTypeœ:œMistralModelœ,œidœ:œMistralModel-rqOP5œ,œnameœ:œtext_outputœ,œoutput_typesœ:[œMessageœ]}-RcaExporterComponent-KTH46{œfieldNameœ:œrca_markdownœ,œidœ:œRcaExporterComponent-KTH46œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
         "selected": false,
-        "source": "MistralModel-WBUOf",
-        "sourceHandle": "{œdataTypeœ:œMistralModelœ,œidœ:œMistralModel-WBUOfœ,œnameœ:œtext_outputœ,œoutput_typesœ:[œMessageœ]}",
-        "target": "CustomComponent-4TkZo",
-        "targetHandle": "{œfieldNameœ:œrca_markdownœ,œidœ:œCustomComponent-4TkZoœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
+        "source": "MistralModel-rqOP5",
+        "sourceHandle": "{œdataTypeœ:œMistralModelœ,œidœ:œMistralModel-rqOP5œ,œnameœ:œtext_outputœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "RcaExporterComponent-KTH46",
+        "targetHandle": "{œfieldNameœ:œrca_markdownœ,œidœ:œRcaExporterComponent-KTH46œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
       },
       {
         "animated": false,
@@ -176,7 +120,7 @@
         "data": {
           "sourceHandle": {
             "dataType": "RcaExporterComponent",
-            "id": "CustomComponent-4TkZo",
+            "id": "RcaExporterComponent-KTH46",
             "name": "export_status",
             "output_types": [
               "Message"
@@ -184,7 +128,7 @@
           },
           "targetHandle": {
             "fieldName": "input_value",
-            "id": "ChatOutput-MC72I",
+            "id": "ChatOutput-MIM00",
             "inputTypes": [
               "Data",
               "JSON",
@@ -195,18 +139,74 @@
             "type": "other"
           }
         },
-        "id": "xy-edge__CustomComponent-4TkZo{œdataTypeœ:œRcaExporterComponentœ,œidœ:œCustomComponent-4TkZoœ,œnameœ:œexport_statusœ,œoutput_typesœ:[œMessageœ]}-ChatOutput-MC72I{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-MC72Iœ,œinputTypesœ:[œDataœ,œJSONœ,œDataFrameœ,œTableœ,œMessageœ],œtypeœ:œotherœ}",
+        "id": "reactflow__edge-RcaExporterComponent-KTH46{œdataTypeœ:œRcaExporterComponentœ,œidœ:œRcaExporterComponent-KTH46œ,œnameœ:œexport_statusœ,œoutput_typesœ:[œMessageœ]}-ChatOutput-MIM00{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-MIM00œ,œinputTypesœ:[œDataœ,œJSONœ,œDataFrameœ,œTableœ,œMessageœ],œtypeœ:œotherœ}",
         "selected": false,
-        "source": "CustomComponent-4TkZo",
-        "sourceHandle": "{œdataTypeœ:œRcaExporterComponentœ,œidœ:œCustomComponent-4TkZoœ,œnameœ:œexport_statusœ,œoutput_typesœ:[œMessageœ]}",
-        "target": "ChatOutput-MC72I",
-        "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-MC72Iœ,œinputTypesœ:[œDataœ,œJSONœ,œDataFrameœ,œTableœ,œMessageœ],œtypeœ:œotherœ}"
+        "source": "RcaExporterComponent-KTH46",
+        "sourceHandle": "{œdataTypeœ:œRcaExporterComponentœ,œidœ:œRcaExporterComponent-KTH46œ,œnameœ:œexport_statusœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "ChatOutput-MIM00",
+        "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-MIM00œ,œinputTypesœ:[œDataœ,œJSONœ,œDataFrameœ,œTableœ,œMessageœ],œtypeœ:œotherœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "Prompt Template",
+            "id": "Prompt Template-iLAUd",
+            "name": "prompt",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "url_input",
+            "id": "APIRequest-x3OSv",
+            "inputTypes": [
+              "Message"
+            ],
+            "type": "str"
+          }
+        },
+        "id": "xy-edge__Prompt Template-iLAUd{œdataTypeœ:œPrompt Templateœ,œidœ:œPrompt Template-iLAUdœ,œnameœ:œpromptœ,œoutput_typesœ:[œMessageœ]}-APIRequest-x3OSv{œfieldNameœ:œurl_inputœ,œidœ:œAPIRequest-x3OSvœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "selected": false,
+        "source": "Prompt Template-iLAUd",
+        "sourceHandle": "{œdataTypeœ:œPrompt Templateœ,œidœ:œPrompt Template-iLAUdœ,œnameœ:œpromptœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "APIRequest-x3OSv",
+        "targetHandle": "{œfieldNameœ:œurl_inputœ,œidœ:œAPIRequest-x3OSvœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "ChatInput",
+            "id": "ChatInput-hzm0B",
+            "name": "message",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "issue_keys",
+            "id": "Prompt Template-iLAUd",
+            "inputTypes": [
+              "Message"
+            ],
+            "type": "str"
+          }
+        },
+        "id": "xy-edge__ChatInput-hzm0B{œdataTypeœ:œChatInputœ,œidœ:œChatInput-hzm0Bœ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}-Prompt Template-iLAUd{œfieldNameœ:œissue_keysœ,œidœ:œPrompt Template-iLAUdœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "selected": false,
+        "source": "ChatInput-hzm0B",
+        "sourceHandle": "{œdataTypeœ:œChatInputœ,œidœ:œChatInput-hzm0Bœ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "Prompt Template-iLAUd",
+        "targetHandle": "{œfieldNameœ:œissue_keysœ,œidœ:œPrompt Template-iLAUdœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
       }
     ],
     "nodes": [
       {
         "data": {
-          "id": "ChatInput-u32z3",
+          "id": "ChatInput-hzm0B",
           "node": {
             "base_classes": [
               "Message"
@@ -237,12 +237,12 @@
                 "dependencies": [
                   {
                     "name": "lfx",
-                    "version": null
+                    "version": "1.10.0"
                   }
                 ],
                 "total_dependencies": 1
               },
-              "module": "lfx.components.input_output.chat.ChatInput"
+              "module": "custom_components.chat_input"
             },
             "minimized": true,
             "output_types": [],
@@ -252,8 +252,12 @@
                 "cache": true,
                 "display_name": "Chat Message",
                 "group_outputs": false,
+                "hidden": null,
+                "loop_types": null,
                 "method": "message_response",
                 "name": "message",
+                "options": null,
+                "required_inputs": null,
                 "selected": "Message",
                 "tool_mode": true,
                 "types": [
@@ -306,7 +310,7 @@
                 "trace_as_metadata": true,
                 "track_in_telemetry": false,
                 "type": "str",
-                "value": ""
+                "value": "QA-22"
               },
               "files": {
                 "_input_type": "FileInput",
@@ -486,21 +490,21 @@
           "type": "ChatInput"
         },
         "dragging": false,
-        "id": "ChatInput-u32z3",
+        "id": "ChatInput-hzm0B",
         "measured": {
           "height": 52,
           "width": 192
         },
         "position": {
-          "x": -231.44328696161926,
-          "y": -177.6325078869712
+          "x": -367.3442551635203,
+          "y": -106.26928926607151
         },
         "selected": false,
         "type": "genericNode"
       },
       {
         "data": {
-          "id": "APIRequest-xNoVl",
+          "id": "APIRequest-x3OSv",
           "node": {
             "base_classes": [
               "JSON"
@@ -527,7 +531,7 @@
             ],
             "frozen": false,
             "icon": "Globe",
-            "last_updated": "2026-06-27T18:45:47.861Z",
+            "last_updated": "2026-06-29T17:49:07.780Z",
             "legacy": false,
             "lf_version": "1.10.0",
             "metadata": {
@@ -579,10 +583,10 @@
             "pinned": false,
             "template": {
               "_frontend_node_flow_id": {
-                "value": "d0de0863-b3f4-44f8-8720-a187e4029213"
+                "value": "c7513a46-daa4-4dd6-adb2-0b58a9c79dc0"
               },
               "_frontend_node_folder_id": {
-                "value": "011fd645-4f38-4d59-8c87-4f3c8606d1ae"
+                "value": "fc134815-ec62-4119-ba72-473e3ad183b1"
               },
               "_type": "Component",
               "body": {
@@ -674,7 +678,7 @@
                 "trace_as_metadata": true,
                 "track_in_telemetry": false,
                 "type": "str",
-                "value": "curl -X POST -u \"amithhathwar1997@gmail.com:YOUR_ATLASSIAN_API_TOKEN\" -H \"Accept: application/json\" -H \"Content-Type: application/json\" -d '{\"jql\": \"key in ({issue_keys})\", \"fields\": [\"summary\", \"description\", \"status\", \"priority\", \"issuetype\"]}' \"https://amithhathwar.atlassian.net/rest/api/3/search\""
+                "value": "curl --location 'https://jaivir.atlassian.net/rest/api/3/issue/{}' \\\n--header 'Accept: application/json' \\\n--header 'Authorization: Basic amFpdmlycmF0aGkuc2luZ2gxOUBnbWFpbC5jb206QVRBVFQzeEZmR0YwYmRSVFZtTVNOVnJkMmE0LXpXaENqQUtIN1E5MmhTRkptd0xVX2p2Nlk2cWw2QjR0RmNqQW13WXotVmJ3dXQ5WkxoNTBmT1JXWFBVVXBNT0ZXZWRPMzhoQXBPWmsxMGhSOHR0U3VpaUI2SHlWNEF6S2pMUUFMOHA1N3c5LVNxbE1GTXhMTS1EX05icFBBcndNYmVjTTFlaDllTWpGelg3eFU1a2tic2g0U1FrPTk0ODQwRUFB' \\\n--header 'Cookie: atlassian.xsrf.token=5476203bac55b87d3ef9ebb4d41c23b2dbaa1d89_lin'"
               },
               "follow_redirects": {
                 "_input_type": "BoolInput",
@@ -740,20 +744,12 @@
                 "type": "table",
                 "value": [
                   {
-                    "key": "User-Agent",
-                    "value": "Langflow/1.0"
-                  },
-                  {
-                    "key": "Authorization",
-                    "value": "Basic YW1pdGhoYXRod2FyMTk5N0BnbWFpbC5jb206QVRBVFQzeEZmR0YwMm90NjVITVBaWFZMZW56T01SNjN5aGxSU3FoRjRobkhrTGJ0ZWZQUXcxU0NEQkw1Q3dMVDg4Z24zdmJqWldBUTFRTHpOZ3l6WDZYNkZPUXdBMGZXVkFTWkI4eFMyaGF6NksyWjBpMzBrZFRUendPRjJBeDNjVE80cFpFdVRHb2VrWC1kZzR6NlhIQXZyd2RIX2lWbkIxbDVHSEVzY2FycTJhVFJUWVpOQ2ZzPTQ3NjExMEY3"
-                  },
-                  {
                     "key": "Accept",
                     "value": "application/json"
                   },
                   {
-                    "key": "Content-Type",
-                    "value": "application/json"
+                    "key": "Authorization",
+                    "value": "Basic amFpdmlycmF0aGkuc2luZ2gxOUBnbWFpbC5jb206QVRBVFQzeEZmR0YwYmRSVFZtTVNOVnJkMmE0LXpXaENqQUtIN1E5MmhTRkptd0xVX2p2Nlk2cWw2QjR0RmNqQW13WXotVmJ3dXQ5WkxoNTBmT1JXWFBVVXBNT0ZXZWRPMzhoQXBPWmsxMGhSOHR0U3VpaUI2SHlWNEF6S2pMUUFMOHA1N3c5LVNxbE1GTXhMTS1EX05icFBBcndNYmVjTTFlaDllTWpGelg3eFU1a2tic2g0U1FrPTk0ODQwRUFB"
                   }
                 ]
               },
@@ -929,21 +925,21 @@
           "type": "APIRequest"
         },
         "dragging": false,
-        "id": "APIRequest-xNoVl",
+        "id": "APIRequest-x3OSv",
         "measured": {
-          "height": 468,
+          "height": 469,
           "width": 320
         },
         "position": {
-          "x": 330.63145139083946,
-          "y": -84.33842763966663
+          "x": 321.0867225737182,
+          "y": -88.15631916651515
         },
         "selected": false,
         "type": "genericNode"
       },
       {
         "data": {
-          "id": "Prompt Template-qPGC3",
+          "id": "Prompt Template-iLAUd",
           "node": {
             "base_classes": [
               "Message"
@@ -1079,7 +1075,7 @@
                 "trace_as_input": true,
                 "track_in_telemetry": false,
                 "type": "prompt",
-                "value": "https://amithhathwar.atlassian.net/rest/api/3/search/jql?jql=key%20in%20({issue_keys})&fields=summary,description,status,priority,issuetype"
+                "value": "https://jaivir.atlassian.net/rest/api/3/search/jql?jql=key%20in%20({issue_keys})&fields=summary,description,status,priority,issuetype"
               },
               "tool_placeholder": {
                 "_input_type": "MessageTextInput",
@@ -1134,21 +1130,21 @@
           "type": "Prompt Template"
         },
         "dragging": false,
-        "id": "Prompt Template-qPGC3",
+        "id": "Prompt Template-iLAUd",
         "measured": {
-          "height": 346,
+          "height": 347,
           "width": 320
         },
         "position": {
-          "x": -23.639637001315876,
-          "y": -154.45521175465382
+          "x": -110.48609946454081,
+          "y": 28.967998882178875
         },
         "selected": false,
         "type": "genericNode"
       },
       {
         "data": {
-          "id": "CustomComponent-YTptE",
+          "id": "JiraSearchParserComponent-4otwK",
           "node": {
             "base_classes": [
               "Message",
@@ -1256,9 +1252,9 @@
           "type": "JiraSearchParserComponent"
         },
         "dragging": false,
-        "id": "CustomComponent-YTptE",
+        "id": "JiraSearchParserComponent-4otwK",
         "measured": {
-          "height": 184,
+          "height": 185,
           "width": 320
         },
         "position": {
@@ -1270,7 +1266,7 @@
       },
       {
         "data": {
-          "id": "MistralModel-WBUOf",
+          "id": "MistralModel-rqOP5",
           "node": {
             "base_classes": [
               "LanguageModel",
@@ -1695,9 +1691,9 @@
           "type": "MistralModel"
         },
         "dragging": false,
-        "id": "MistralModel-WBUOf",
+        "id": "MistralModel-rqOP5",
         "measured": {
-          "height": 452,
+          "height": 453,
           "width": 320
         },
         "position": {
@@ -1709,7 +1705,7 @@
       },
       {
         "data": {
-          "id": "Prompt Template-Vc6Ad",
+          "id": "Prompt Template-6ThMZ",
           "node": {
             "base_classes": [
               "Message"
@@ -1893,9 +1889,9 @@
           "type": "Prompt Template"
         },
         "dragging": false,
-        "id": "Prompt Template-Vc6Ad",
+        "id": "Prompt Template-6ThMZ",
         "measured": {
-          "height": 346,
+          "height": 347,
           "width": 320
         },
         "position": {
@@ -1907,7 +1903,7 @@
       },
       {
         "data": {
-          "id": "ChatOutput-MC72I",
+          "id": "ChatOutput-MIM00",
           "node": {
             "base_classes": [
               "Message"
@@ -2193,7 +2189,7 @@
           "type": "ChatOutput"
         },
         "dragging": false,
-        "id": "ChatOutput-MC72I",
+        "id": "ChatOutput-MIM00",
         "measured": {
           "height": 52,
           "width": 192
@@ -2207,7 +2203,7 @@
       },
       {
         "data": {
-          "id": "CustomComponent-4TkZo",
+          "id": "RcaExporterComponent-KTH46",
           "node": {
             "base_classes": [
               "Message",
@@ -2345,28 +2341,28 @@
           "type": "RcaExporterComponent"
         },
         "dragging": false,
-        "id": "CustomComponent-4TkZo",
+        "id": "RcaExporterComponent-KTH46",
         "measured": {
-          "height": 304,
+          "height": 305,
           "width": 320
         },
         "position": {
-          "x": 1782.162999083256,
-          "y": 361.56215334755194
+          "x": 1707.6963649513314,
+          "y": 192.7711159818561
         },
         "selected": false,
         "type": "genericNode"
       }
     ],
     "viewport": {
-      "x": 166.66069473489205,
-      "y": 207.90644659564063,
-      "zoom": 0.4738123804518783
+      "x": 162.13081897578928,
+      "y": 236.0456925398891,
+      "zoom": 0.39235898465767655
     }
   },
   "description": "Text Generation Meets Business Transformation.",
   "endpoint_name": null,
-  "id": "d0de0863-b3f4-44f8-8720-a187e4029213",
+  "id": "c7513a46-daa4-4dd6-adb2-0b58a9c79dc0",
   "is_component": false,
   "last_tested_version": "1.10.0",
   "locked": false,

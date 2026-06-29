@@ -6,64 +6,8 @@
         "className": "",
         "data": {
           "sourceHandle": {
-            "dataType": "ChatInput",
-            "id": "ChatInput-u32z3",
-            "name": "message",
-            "output_types": [
-              "Message"
-            ]
-          },
-          "targetHandle": {
-            "fieldName": "issue_keys",
-            "id": "Prompt Template-qPGC3",
-            "inputTypes": [
-              "Message"
-            ],
-            "type": "str"
-          }
-        },
-        "id": "xy-edge__ChatInput-u32z3{œdataTypeœ:œChatInputœ,œidœ:œChatInput-u32z3œ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}-Prompt Template-qPGC3{œfieldNameœ:œissue_keysœ,œidœ:œPrompt Template-qPGC3œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
-        "selected": false,
-        "source": "ChatInput-u32z3",
-        "sourceHandle": "{œdataTypeœ:œChatInputœ,œidœ:œChatInput-u32z3œ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}",
-        "target": "Prompt Template-qPGC3",
-        "targetHandle": "{œfieldNameœ:œissue_keysœ,œidœ:œPrompt Template-qPGC3œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
-      },
-      {
-        "animated": false,
-        "className": "",
-        "data": {
-          "sourceHandle": {
-            "dataType": "Prompt Template",
-            "id": "Prompt Template-qPGC3",
-            "name": "prompt",
-            "output_types": [
-              "Message"
-            ]
-          },
-          "targetHandle": {
-            "fieldName": "url_input",
-            "id": "APIRequest-xNoVl",
-            "inputTypes": [
-              "Message"
-            ],
-            "type": "str"
-          }
-        },
-        "id": "xy-edge__Prompt Template-qPGC3{œdataTypeœ:œPrompt Templateœ,œidœ:œPrompt Template-qPGC3œ,œnameœ:œpromptœ,œoutput_typesœ:[œMessageœ]}-APIRequest-xNoVl{œfieldNameœ:œurl_inputœ,œidœ:œAPIRequest-xNoVlœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
-        "selected": false,
-        "source": "Prompt Template-qPGC3",
-        "sourceHandle": "{œdataTypeœ:œPrompt Templateœ,œidœ:œPrompt Template-qPGC3œ,œnameœ:œpromptœ,œoutput_typesœ:[œMessageœ]}",
-        "target": "APIRequest-xNoVl",
-        "targetHandle": "{œfieldNameœ:œurl_inputœ,œidœ:œAPIRequest-xNoVlœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
-      },
-      {
-        "animated": false,
-        "className": "",
-        "data": {
-          "sourceHandle": {
             "dataType": "APIRequest",
-            "id": "APIRequest-xNoVl",
+            "id": "APIRequest-JN5nc",
             "name": "data",
             "output_types": [
               "JSON"
@@ -71,7 +15,7 @@
           },
           "targetHandle": {
             "fieldName": "jira_json",
-            "id": "CustomComponent-YTptE",
+            "id": "JiraSearchParserComponent-mM8dB",
             "inputTypes": [
               "Data",
               "JSON"
@@ -79,12 +23,12 @@
             "type": "other"
           }
         },
-        "id": "xy-edge__APIRequest-xNoVl{œdataTypeœ:œAPIRequestœ,œidœ:œAPIRequest-xNoVlœ,œnameœ:œdataœ,œoutput_typesœ:[œJSONœ]}-CustomComponent-YTptE{œfieldNameœ:œjira_jsonœ,œidœ:œCustomComponent-YTptEœ,œinputTypesœ:[œDataœ,œJSONœ],œtypeœ:œotherœ}",
+        "id": "reactflow__edge-APIRequest-JN5nc{œdataTypeœ:œAPIRequestœ,œidœ:œAPIRequest-JN5ncœ,œnameœ:œdataœ,œoutput_typesœ:[œJSONœ]}-JiraSearchParserComponent-mM8dB{œfieldNameœ:œjira_jsonœ,œidœ:œJiraSearchParserComponent-mM8dBœ,œinputTypesœ:[œDataœ,œJSONœ],œtypeœ:œotherœ}",
         "selected": false,
-        "source": "APIRequest-xNoVl",
-        "sourceHandle": "{œdataTypeœ:œAPIRequestœ,œidœ:œAPIRequest-xNoVlœ,œnameœ:œdataœ,œoutput_typesœ:[œJSONœ]}",
-        "target": "CustomComponent-YTptE",
-        "targetHandle": "{œfieldNameœ:œjira_jsonœ,œidœ:œCustomComponent-YTptEœ,œinputTypesœ:[œDataœ,œJSONœ],œtypeœ:œotherœ}"
+        "source": "APIRequest-JN5nc",
+        "sourceHandle": "{œdataTypeœ:œAPIRequestœ,œidœ:œAPIRequest-JN5ncœ,œnameœ:œdataœ,œoutput_typesœ:[œJSONœ]}",
+        "target": "JiraSearchParserComponent-mM8dB",
+        "targetHandle": "{œfieldNameœ:œjira_jsonœ,œidœ:œJiraSearchParserComponent-mM8dBœ,œinputTypesœ:[œDataœ,œJSONœ],œtypeœ:œotherœ}"
       },
       {
         "animated": false,
@@ -92,7 +36,7 @@
         "data": {
           "sourceHandle": {
             "dataType": "Prompt Template",
-            "id": "Prompt Template-Vc6Ad",
+            "id": "Prompt Template-NUuDV",
             "name": "prompt",
             "output_types": [
               "Message"
@@ -100,19 +44,19 @@
           },
           "targetHandle": {
             "fieldName": "system_message",
-            "id": "MistralModel-WBUOf",
+            "id": "MistralModel-IAau6",
             "inputTypes": [
               "Message"
             ],
             "type": "str"
           }
         },
-        "id": "xy-edge__Prompt Template-Vc6Ad{œdataTypeœ:œPrompt Templateœ,œidœ:œPrompt Template-Vc6Adœ,œnameœ:œpromptœ,œoutput_typesœ:[œMessageœ]}-MistralModel-WBUOf{œfieldNameœ:œsystem_messageœ,œidœ:œMistralModel-WBUOfœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "id": "reactflow__edge-Prompt Template-NUuDV{œdataTypeœ:œPrompt Templateœ,œidœ:œPrompt Template-NUuDVœ,œnameœ:œpromptœ,œoutput_typesœ:[œMessageœ]}-MistralModel-IAau6{œfieldNameœ:œsystem_messageœ,œidœ:œMistralModel-IAau6œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
         "selected": false,
-        "source": "Prompt Template-Vc6Ad",
-        "sourceHandle": "{œdataTypeœ:œPrompt Templateœ,œidœ:œPrompt Template-Vc6Adœ,œnameœ:œpromptœ,œoutput_typesœ:[œMessageœ]}",
-        "target": "MistralModel-WBUOf",
-        "targetHandle": "{œfieldNameœ:œsystem_messageœ,œidœ:œMistralModel-WBUOfœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
+        "source": "Prompt Template-NUuDV",
+        "sourceHandle": "{œdataTypeœ:œPrompt Templateœ,œidœ:œPrompt Template-NUuDVœ,œnameœ:œpromptœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "MistralModel-IAau6",
+        "targetHandle": "{œfieldNameœ:œsystem_messageœ,œidœ:œMistralModel-IAau6œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
       },
       {
         "animated": false,
@@ -120,7 +64,7 @@
         "data": {
           "sourceHandle": {
             "dataType": "MistralModel",
-            "id": "MistralModel-WBUOf",
+            "id": "MistralModel-IAau6",
             "name": "text_output",
             "output_types": [
               "Message"
@@ -128,19 +72,19 @@
           },
           "targetHandle": {
             "fieldName": "llm_output",
-            "id": "CustomComponent-hMEdx",
+            "id": "MultiFileWriterComponent-xCuCQ",
             "inputTypes": [
               "Message"
             ],
             "type": "str"
           }
         },
-        "id": "xy-edge__MistralModel-WBUOf{œdataTypeœ:œMistralModelœ,œidœ:œMistralModel-WBUOfœ,œnameœ:œtext_outputœ,œoutput_typesœ:[œMessageœ]}-CustomComponent-hMEdx{œfieldNameœ:œllm_outputœ,œidœ:œCustomComponent-hMEdxœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "id": "reactflow__edge-MistralModel-IAau6{œdataTypeœ:œMistralModelœ,œidœ:œMistralModel-IAau6œ,œnameœ:œtext_outputœ,œoutput_typesœ:[œMessageœ]}-MultiFileWriterComponent-xCuCQ{œfieldNameœ:œllm_outputœ,œidœ:œMultiFileWriterComponent-xCuCQœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
         "selected": false,
-        "source": "MistralModel-WBUOf",
-        "sourceHandle": "{œdataTypeœ:œMistralModelœ,œidœ:œMistralModel-WBUOfœ,œnameœ:œtext_outputœ,œoutput_typesœ:[œMessageœ]}",
-        "target": "CustomComponent-hMEdx",
-        "targetHandle": "{œfieldNameœ:œllm_outputœ,œidœ:œCustomComponent-hMEdxœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
+        "source": "MistralModel-IAau6",
+        "sourceHandle": "{œdataTypeœ:œMistralModelœ,œidœ:œMistralModel-IAau6œ,œnameœ:œtext_outputœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "MultiFileWriterComponent-xCuCQ",
+        "targetHandle": "{œfieldNameœ:œllm_outputœ,œidœ:œMultiFileWriterComponent-xCuCQœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
       },
       {
         "animated": false,
@@ -148,7 +92,7 @@
         "data": {
           "sourceHandle": {
             "dataType": "MultiFileWriterComponent",
-            "id": "CustomComponent-hMEdx",
+            "id": "MultiFileWriterComponent-xCuCQ",
             "name": "write_status",
             "output_types": [
               "Message"
@@ -156,7 +100,7 @@
           },
           "targetHandle": {
             "fieldName": "input_value",
-            "id": "ChatOutput-SekZO",
+            "id": "ChatOutput-RqCoB",
             "inputTypes": [
               "Data",
               "JSON",
@@ -167,12 +111,12 @@
             "type": "other"
           }
         },
-        "id": "xy-edge__CustomComponent-hMEdx{œdataTypeœ:œMultiFileWriterComponentœ,œidœ:œCustomComponent-hMEdxœ,œnameœ:œwrite_statusœ,œoutput_typesœ:[œMessageœ]}-ChatOutput-SekZO{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-SekZOœ,œinputTypesœ:[œDataœ,œJSONœ,œDataFrameœ,œTableœ,œMessageœ],œtypeœ:œotherœ}",
+        "id": "reactflow__edge-MultiFileWriterComponent-xCuCQ{œdataTypeœ:œMultiFileWriterComponentœ,œidœ:œMultiFileWriterComponent-xCuCQœ,œnameœ:œwrite_statusœ,œoutput_typesœ:[œMessageœ]}-ChatOutput-RqCoB{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-RqCoBœ,œinputTypesœ:[œDataœ,œJSONœ,œDataFrameœ,œTableœ,œMessageœ],œtypeœ:œotherœ}",
         "selected": false,
-        "source": "CustomComponent-hMEdx",
-        "sourceHandle": "{œdataTypeœ:œMultiFileWriterComponentœ,œidœ:œCustomComponent-hMEdxœ,œnameœ:œwrite_statusœ,œoutput_typesœ:[œMessageœ]}",
-        "target": "ChatOutput-SekZO",
-        "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-SekZOœ,œinputTypesœ:[œDataœ,œJSONœ,œDataFrameœ,œTableœ,œMessageœ],œtypeœ:œotherœ}"
+        "source": "MultiFileWriterComponent-xCuCQ",
+        "sourceHandle": "{œdataTypeœ:œMultiFileWriterComponentœ,œidœ:œMultiFileWriterComponent-xCuCQœ,œnameœ:œwrite_statusœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "ChatOutput-RqCoB",
+        "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-RqCoBœ,œinputTypesœ:[œDataœ,œJSONœ,œDataFrameœ,œTableœ,œMessageœ],œtypeœ:œotherœ}"
       },
       {
         "animated": false,
@@ -180,7 +124,7 @@
         "data": {
           "sourceHandle": {
             "dataType": "JiraSearchParserComponent",
-            "id": "CustomComponent-YTptE",
+            "id": "JiraSearchParserComponent-mM8dB",
             "name": "parsed_text",
             "output_types": [
               "Message"
@@ -188,19 +132,19 @@
           },
           "targetHandle": {
             "fieldName": "context",
-            "id": "Prompt Template-Vc6Ad",
+            "id": "Prompt Template-NUuDV",
             "inputTypes": [
               "Message"
             ],
             "type": "str"
           }
         },
-        "id": "xy-edge__CustomComponent-YTptE{œdataTypeœ:œJiraSearchParserComponentœ,œidœ:œCustomComponent-YTptEœ,œnameœ:œparsed_textœ,œoutput_typesœ:[œMessageœ]}-Prompt Template-Vc6Ad{œfieldNameœ:œcontextœ,œidœ:œPrompt Template-Vc6Adœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "id": "reactflow__edge-JiraSearchParserComponent-mM8dB{œdataTypeœ:œJiraSearchParserComponentœ,œidœ:œJiraSearchParserComponent-mM8dBœ,œnameœ:œparsed_textœ,œoutput_typesœ:[œMessageœ]}-Prompt Template-NUuDV{œfieldNameœ:œcontextœ,œidœ:œPrompt Template-NUuDVœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
         "selected": false,
-        "source": "CustomComponent-YTptE",
-        "sourceHandle": "{œdataTypeœ:œJiraSearchParserComponentœ,œidœ:œCustomComponent-YTptEœ,œnameœ:œparsed_textœ,œoutput_typesœ:[œMessageœ]}",
-        "target": "Prompt Template-Vc6Ad",
-        "targetHandle": "{œfieldNameœ:œcontextœ,œidœ:œPrompt Template-Vc6Adœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
+        "source": "JiraSearchParserComponent-mM8dB",
+        "sourceHandle": "{œdataTypeœ:œJiraSearchParserComponentœ,œidœ:œJiraSearchParserComponent-mM8dBœ,œnameœ:œparsed_textœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "Prompt Template-NUuDV",
+        "targetHandle": "{œfieldNameœ:œcontextœ,œidœ:œPrompt Template-NUuDVœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
       },
       {
         "animated": false,
@@ -208,7 +152,7 @@
         "data": {
           "sourceHandle": {
             "dataType": "LocalDocumentReaderComponent",
-            "id": "CustomComponent-xZb3w",
+            "id": "LocalDocumentReaderComponent-cCX9J",
             "name": "text_output",
             "output_types": [
               "Message"
@@ -216,19 +160,19 @@
           },
           "targetHandle": {
             "fieldName": "context",
-            "id": "Prompt Template-zZsPV",
+            "id": "Prompt Template-o7wsQ",
             "inputTypes": [
               "Message"
             ],
             "type": "str"
           }
         },
-        "id": "xy-edge__CustomComponent-xZb3w{œdataTypeœ:œLocalDocumentReaderComponentœ,œidœ:œCustomComponent-xZb3wœ,œnameœ:œtext_outputœ,œoutput_typesœ:[œMessageœ]}-Prompt Template-zZsPV{œfieldNameœ:œcontextœ,œidœ:œPrompt Template-zZsPVœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "id": "reactflow__edge-LocalDocumentReaderComponent-cCX9J{œdataTypeœ:œLocalDocumentReaderComponentœ,œidœ:œLocalDocumentReaderComponent-cCX9Jœ,œnameœ:œtext_outputœ,œoutput_typesœ:[œMessageœ]}-Prompt Template-o7wsQ{œfieldNameœ:œcontextœ,œidœ:œPrompt Template-o7wsQœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
         "selected": false,
-        "source": "CustomComponent-xZb3w",
-        "sourceHandle": "{œdataTypeœ:œLocalDocumentReaderComponentœ,œidœ:œCustomComponent-xZb3wœ,œnameœ:œtext_outputœ,œoutput_typesœ:[œMessageœ]}",
-        "target": "Prompt Template-zZsPV",
-        "targetHandle": "{œfieldNameœ:œcontextœ,œidœ:œPrompt Template-zZsPVœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
+        "source": "LocalDocumentReaderComponent-cCX9J",
+        "sourceHandle": "{œdataTypeœ:œLocalDocumentReaderComponentœ,œidœ:œLocalDocumentReaderComponent-cCX9Jœ,œnameœ:œtext_outputœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "Prompt Template-o7wsQ",
+        "targetHandle": "{œfieldNameœ:œcontextœ,œidœ:œPrompt Template-o7wsQœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
       },
       {
         "animated": false,
@@ -236,7 +180,7 @@
         "data": {
           "sourceHandle": {
             "dataType": "Prompt Template",
-            "id": "Prompt Template-zZsPV",
+            "id": "Prompt Template-o7wsQ",
             "name": "prompt",
             "output_types": [
               "Message"
@@ -244,19 +188,19 @@
           },
           "targetHandle": {
             "fieldName": "system_message",
-            "id": "MistralModel-vwPFe",
+            "id": "MistralModel-5TZDu",
             "inputTypes": [
               "Message"
             ],
             "type": "str"
           }
         },
-        "id": "xy-edge__Prompt Template-zZsPV{œdataTypeœ:œPrompt Templateœ,œidœ:œPrompt Template-zZsPVœ,œnameœ:œpromptœ,œoutput_typesœ:[œMessageœ]}-MistralModel-vwPFe{œfieldNameœ:œsystem_messageœ,œidœ:œMistralModel-vwPFeœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "id": "reactflow__edge-Prompt Template-o7wsQ{œdataTypeœ:œPrompt Templateœ,œidœ:œPrompt Template-o7wsQœ,œnameœ:œpromptœ,œoutput_typesœ:[œMessageœ]}-MistralModel-5TZDu{œfieldNameœ:œsystem_messageœ,œidœ:œMistralModel-5TZDuœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
         "selected": false,
-        "source": "Prompt Template-zZsPV",
-        "sourceHandle": "{œdataTypeœ:œPrompt Templateœ,œidœ:œPrompt Template-zZsPVœ,œnameœ:œpromptœ,œoutput_typesœ:[œMessageœ]}",
-        "target": "MistralModel-vwPFe",
-        "targetHandle": "{œfieldNameœ:œsystem_messageœ,œidœ:œMistralModel-vwPFeœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
+        "source": "Prompt Template-o7wsQ",
+        "sourceHandle": "{œdataTypeœ:œPrompt Templateœ,œidœ:œPrompt Template-o7wsQœ,œnameœ:œpromptœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "MistralModel-5TZDu",
+        "targetHandle": "{œfieldNameœ:œsystem_messageœ,œidœ:œMistralModel-5TZDuœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
       },
       {
         "animated": false,
@@ -264,7 +208,7 @@
         "data": {
           "sourceHandle": {
             "dataType": "MistralModel",
-            "id": "MistralModel-vwPFe",
+            "id": "MistralModel-5TZDu",
             "name": "text_output",
             "output_types": [
               "Message"
@@ -272,19 +216,19 @@
           },
           "targetHandle": {
             "fieldName": "llm_output",
-            "id": "MultiFileWriterComponent-RXZsV",
+            "id": "MultiFileWriterComponent-zM91m",
             "inputTypes": [
               "Message"
             ],
             "type": "str"
           }
         },
-        "id": "xy-edge__MistralModel-vwPFe{œdataTypeœ:œMistralModelœ,œidœ:œMistralModel-vwPFeœ,œnameœ:œtext_outputœ,œoutput_typesœ:[œMessageœ]}-MultiFileWriterComponent-RXZsV{œfieldNameœ:œllm_outputœ,œidœ:œMultiFileWriterComponent-RXZsVœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "id": "reactflow__edge-MistralModel-5TZDu{œdataTypeœ:œMistralModelœ,œidœ:œMistralModel-5TZDuœ,œnameœ:œtext_outputœ,œoutput_typesœ:[œMessageœ]}-MultiFileWriterComponent-zM91m{œfieldNameœ:œllm_outputœ,œidœ:œMultiFileWriterComponent-zM91mœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
         "selected": false,
-        "source": "MistralModel-vwPFe",
-        "sourceHandle": "{œdataTypeœ:œMistralModelœ,œidœ:œMistralModel-vwPFeœ,œnameœ:œtext_outputœ,œoutput_typesœ:[œMessageœ]}",
-        "target": "MultiFileWriterComponent-RXZsV",
-        "targetHandle": "{œfieldNameœ:œllm_outputœ,œidœ:œMultiFileWriterComponent-RXZsVœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
+        "source": "MistralModel-5TZDu",
+        "sourceHandle": "{œdataTypeœ:œMistralModelœ,œidœ:œMistralModel-5TZDuœ,œnameœ:œtext_outputœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "MultiFileWriterComponent-zM91m",
+        "targetHandle": "{œfieldNameœ:œllm_outputœ,œidœ:œMultiFileWriterComponent-zM91mœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
       },
       {
         "animated": false,
@@ -292,7 +236,7 @@
         "data": {
           "sourceHandle": {
             "dataType": "MultiFileWriterComponent",
-            "id": "MultiFileWriterComponent-RXZsV",
+            "id": "MultiFileWriterComponent-zM91m",
             "name": "write_status",
             "output_types": [
               "Message"
@@ -300,7 +244,7 @@
           },
           "targetHandle": {
             "fieldName": "input_value",
-            "id": "ChatOutput-8i44d",
+            "id": "ChatOutput-k3sEB",
             "inputTypes": [
               "Data",
               "JSON",
@@ -311,18 +255,74 @@
             "type": "other"
           }
         },
-        "id": "xy-edge__MultiFileWriterComponent-RXZsV{œdataTypeœ:œMultiFileWriterComponentœ,œidœ:œMultiFileWriterComponent-RXZsVœ,œnameœ:œwrite_statusœ,œoutput_typesœ:[œMessageœ]}-ChatOutput-8i44d{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-8i44dœ,œinputTypesœ:[œDataœ,œJSONœ,œDataFrameœ,œTableœ,œMessageœ],œtypeœ:œotherœ}",
+        "id": "reactflow__edge-MultiFileWriterComponent-zM91m{œdataTypeœ:œMultiFileWriterComponentœ,œidœ:œMultiFileWriterComponent-zM91mœ,œnameœ:œwrite_statusœ,œoutput_typesœ:[œMessageœ]}-ChatOutput-k3sEB{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-k3sEBœ,œinputTypesœ:[œDataœ,œJSONœ,œDataFrameœ,œTableœ,œMessageœ],œtypeœ:œotherœ}",
         "selected": false,
-        "source": "MultiFileWriterComponent-RXZsV",
-        "sourceHandle": "{œdataTypeœ:œMultiFileWriterComponentœ,œidœ:œMultiFileWriterComponent-RXZsVœ,œnameœ:œwrite_statusœ,œoutput_typesœ:[œMessageœ]}",
-        "target": "ChatOutput-8i44d",
-        "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-8i44dœ,œinputTypesœ:[œDataœ,œJSONœ,œDataFrameœ,œTableœ,œMessageœ],œtypeœ:œotherœ}"
+        "source": "MultiFileWriterComponent-zM91m",
+        "sourceHandle": "{œdataTypeœ:œMultiFileWriterComponentœ,œidœ:œMultiFileWriterComponent-zM91mœ,œnameœ:œwrite_statusœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "ChatOutput-k3sEB",
+        "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-k3sEBœ,œinputTypesœ:[œDataœ,œJSONœ,œDataFrameœ,œTableœ,œMessageœ],œtypeœ:œotherœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "Prompt Template",
+            "id": "Prompt Template-ctw9h",
+            "name": "prompt",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "url_input",
+            "id": "APIRequest-JN5nc",
+            "inputTypes": [
+              "Message"
+            ],
+            "type": "str"
+          }
+        },
+        "id": "xy-edge__Prompt Template-ctw9h{œdataTypeœ:œPrompt Templateœ,œidœ:œPrompt Template-ctw9hœ,œnameœ:œpromptœ,œoutput_typesœ:[œMessageœ]}-APIRequest-JN5nc{œfieldNameœ:œurl_inputœ,œidœ:œAPIRequest-JN5ncœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "selected": false,
+        "source": "Prompt Template-ctw9h",
+        "sourceHandle": "{œdataTypeœ:œPrompt Templateœ,œidœ:œPrompt Template-ctw9hœ,œnameœ:œpromptœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "APIRequest-JN5nc",
+        "targetHandle": "{œfieldNameœ:œurl_inputœ,œidœ:œAPIRequest-JN5ncœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "ChatInput",
+            "id": "ChatInput-LqkDw",
+            "name": "message",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "Jira_ID",
+            "id": "Prompt Template-ctw9h",
+            "inputTypes": [
+              "Message"
+            ],
+            "type": "str"
+          }
+        },
+        "id": "xy-edge__ChatInput-LqkDw{œdataTypeœ:œChatInputœ,œidœ:œChatInput-LqkDwœ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}-Prompt Template-ctw9h{œfieldNameœ:œJira_IDœ,œidœ:œPrompt Template-ctw9hœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "selected": false,
+        "source": "ChatInput-LqkDw",
+        "sourceHandle": "{œdataTypeœ:œChatInputœ,œidœ:œChatInput-LqkDwœ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "Prompt Template-ctw9h",
+        "targetHandle": "{œfieldNameœ:œJira_IDœ,œidœ:œPrompt Template-ctw9hœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
       }
     ],
     "nodes": [
       {
         "data": {
-          "id": "ChatInput-u32z3",
+          "id": "ChatInput-LqkDw",
           "node": {
             "base_classes": [
               "Message"
@@ -602,7 +602,7 @@
           "type": "ChatInput"
         },
         "dragging": false,
-        "id": "ChatInput-u32z3",
+        "id": "ChatInput-LqkDw",
         "measured": {
           "height": 52,
           "width": 192
@@ -616,7 +616,7 @@
       },
       {
         "data": {
-          "id": "APIRequest-xNoVl",
+          "id": "APIRequest-JN5nc",
           "node": {
             "base_classes": [
               "JSON"
@@ -643,7 +643,7 @@
             ],
             "frozen": false,
             "icon": "Globe",
-            "last_updated": "2026-06-27T17:56:14.689Z",
+            "last_updated": "2026-06-29T17:59:54.724Z",
             "legacy": false,
             "lf_version": "1.10.0",
             "metadata": {
@@ -695,10 +695,10 @@
             "pinned": false,
             "template": {
               "_frontend_node_flow_id": {
-                "value": "477be9a4-7dc6-4610-a321-3e56015fd3e0"
+                "value": "2a014bac-cd3b-4de4-a417-4cf00e33d238"
               },
               "_frontend_node_folder_id": {
-                "value": "011fd645-4f38-4d59-8c87-4f3c8606d1ae"
+                "value": "fc134815-ec62-4119-ba72-473e3ad183b1"
               },
               "_type": "Component",
               "body": {
@@ -790,7 +790,7 @@
                 "trace_as_metadata": true,
                 "track_in_telemetry": false,
                 "type": "str",
-                "value": "curl -X POST -u \"amithhathwar1997@gmail.com:YOUR_ATLASSIAN_API_TOKEN\" -H \"Accept: application/json\" -H \"Content-Type: application/json\" -d '{\"jql\": \"key in ({issue_keys})\", \"fields\": [\"summary\", \"description\", \"status\", \"priority\", \"issuetype\"]}' \"https://amithhathwar.atlassian.net/rest/api/3/search\""
+                "value": "curl --location 'https://jaivir.atlassian.net/rest/api/3/issue/QA-19' \\\n--header 'Accept: application/json' \\\n--header 'Authorization: Basic amFpdmlycmF0aGkuc2luZ2gxOUBnbWFpbC5jb206QVRBVFQzeEZmR0YwYmRSVFZtTVNOVnJkMmE0LXpXaENqQUtIN1E5MmhTRkptd0xVX2p2Nlk2cWw2QjR0RmNqQW13WXotVmJ3dXQ5WkxoNTBmT1JXWFBVVXBNT0ZXZWRPMzhoQXBPWmsxMGhSOHR0U3VpaUI2SHlWNEF6S2pMUUFMOHA1N3c5LVNxbE1GTXhMTS1EX05icFBBcndNYmVjTTFlaDllTWpGelg3eFU1a2tic2g0U1FrPTk0ODQwRUFB' \\\n--header 'Cookie: atlassian.xsrf.token=5476203bac55b87d3ef9ebb4d41c23b2dbaa1d89_lin'"
               },
               "follow_redirects": {
                 "_input_type": "BoolInput",
@@ -856,20 +856,12 @@
                 "type": "table",
                 "value": [
                   {
-                    "key": "User-Agent",
-                    "value": "Langflow/1.0"
-                  },
-                  {
-                    "key": "Authorization",
-                    "value": "Basic YW1pdGhoYXRod2FyMTk5N0BnbWFpbC5jb206QVRBVFQzeEZmR0YwMm90NjVITVBaWFZMZW56T01SNjN5aGxSU3FoRjRobkhrTGJ0ZWZQUXcxU0NEQkw1Q3dMVDg4Z24zdmJqWldBUTFRTHpOZ3l6WDZYNkZPUXdBMGZXVkFTWkI4eFMyaGF6NksyWjBpMzBrZFRUendPRjJBeDNjVE80cFpFdVRHb2VrWC1kZzR6NlhIQXZyd2RIX2lWbkIxbDVHSEVzY2FycTJhVFJUWVpOQ2ZzPTQ3NjExMEY3"
-                  },
-                  {
                     "key": "Accept",
                     "value": "application/json"
                   },
                   {
-                    "key": "Content-Type",
-                    "value": "application/json"
+                    "key": "Authorization",
+                    "value": "Basic amFpdmlycmF0aGkuc2luZ2gxOUBnbWFpbC5jb206QVRBVFQzeEZmR0YwYmRSVFZtTVNOVnJkMmE0LXpXaENqQUtIN1E5MmhTRkptd0xVX2p2Nlk2cWw2QjR0RmNqQW13WXotVmJ3dXQ5WkxoNTBmT1JXWFBVVXBNT0ZXZWRPMzhoQXBPWmsxMGhSOHR0U3VpaUI2SHlWNEF6S2pMUUFMOHA1N3c5LVNxbE1GTXhMTS1EX05icFBBcndNYmVjTTFlaDllTWpGelg3eFU1a2tic2g0U1FrPTk0ODQwRUFB"
                   }
                 ]
               },
@@ -1045,9 +1037,9 @@
           "type": "APIRequest"
         },
         "dragging": false,
-        "id": "APIRequest-xNoVl",
+        "id": "APIRequest-JN5nc",
         "measured": {
-          "height": 468,
+          "height": 469,
           "width": 320
         },
         "position": {
@@ -1059,212 +1051,7 @@
       },
       {
         "data": {
-          "id": "Prompt Template-qPGC3",
-          "node": {
-            "base_classes": [
-              "Message"
-            ],
-            "beta": false,
-            "conditional_paths": [],
-            "custom_fields": {
-              "template": [
-                "issue_keys"
-              ]
-            },
-            "description": "Create a prompt template with dynamic variables.",
-            "display_name": "Prompt Template",
-            "documentation": "https://docs.langflow.org/components-prompts",
-            "edited": false,
-            "error": null,
-            "field_order": [
-              "template",
-              "use_double_brackets",
-              "tool_placeholder"
-            ],
-            "frozen": false,
-            "full_path": null,
-            "icon": "prompts",
-            "is_composition": null,
-            "is_input": null,
-            "is_output": null,
-            "legacy": false,
-            "lf_version": "1.10.0",
-            "metadata": {
-              "code_hash": "3d3fd7b8a36f",
-              "dependencies": {
-                "dependencies": [
-                  {
-                    "name": "lfx",
-                    "version": null
-                  }
-                ],
-                "total_dependencies": 1
-              },
-              "module": "lfx.components.models_and_agents.prompt.PromptComponent"
-            },
-            "minimized": false,
-            "name": "",
-            "output_types": [],
-            "outputs": [
-              {
-                "allows_loop": false,
-                "cache": true,
-                "display_name": "Prompt",
-                "group_outputs": false,
-                "hidden": null,
-                "loop_types": null,
-                "method": "build_prompt",
-                "name": "prompt",
-                "options": null,
-                "required_inputs": null,
-                "selected": "Message",
-                "tool_mode": true,
-                "types": [
-                  "Message"
-                ],
-                "value": "__UNDEFINED__"
-              }
-            ],
-            "pinned": false,
-            "priority": null,
-            "replacement": null,
-            "template": {
-              "_frontend_node_flow_id": {
-                "value": "d0de0863-b3f4-44f8-8720-a187e4029213"
-              },
-              "_frontend_node_folder_id": {
-                "value": "011fd645-4f38-4d59-8c87-4f3c8606d1ae"
-              },
-              "_type": "Component",
-              "code": {
-                "advanced": true,
-                "dynamic": true,
-                "fileTypes": [],
-                "file_path": "",
-                "info": "",
-                "list": false,
-                "load_from_db": false,
-                "multiline": true,
-                "name": "code",
-                "password": false,
-                "placeholder": "",
-                "required": true,
-                "show": true,
-                "title_case": false,
-                "type": "code",
-                "value": "from typing import Any\n\nfrom lfx.base.prompts.api_utils import process_prompt_template\nfrom lfx.custom.custom_component.component import Component\nfrom lfx.inputs.input_mixin import FieldTypes\nfrom lfx.inputs.inputs import DefaultPromptField\nfrom lfx.io import BoolInput, MessageTextInput, Output, PromptInput\nfrom lfx.log.logger import logger\nfrom lfx.schema.dotdict import dotdict\nfrom lfx.schema.message import Message\nfrom lfx.template.utils import update_template_values\nfrom lfx.utils.mustache_security import validate_mustache_template\n\n\nclass PromptComponent(Component):\n    display_name: str = \"Prompt Template\"\n    description: str = \"Create a prompt template with dynamic variables.\"\n    documentation: str = \"https://docs.langflow.org/components-prompts\"\n    icon = \"prompts\"\n    trace_type = \"prompt\"\n    name = \"Prompt Template\"\n\n    inputs = [\n        PromptInput(name=\"template\", display_name=\"Template\"),\n        BoolInput(\n            name=\"use_double_brackets\",\n            display_name=\"Use Double Brackets\",\n            value=False,\n            advanced=True,\n            info=\"Use {{variable}} syntax instead of {variable}.\",\n            real_time_refresh=True,\n        ),\n        MessageTextInput(\n            name=\"tool_placeholder\",\n            display_name=\"Tool Placeholder\",\n            tool_mode=True,\n            advanced=True,\n            show=False,\n            info=\"A placeholder input for tool mode.\",\n        ),\n    ]\n\n    outputs = [\n        Output(display_name=\"Prompt\", name=\"prompt\", method=\"build_prompt\"),\n    ]\n\n    def update_build_config(self, build_config: dotdict, field_value: Any, field_name: str | None = None) -> dotdict:\n        \"\"\"Update the template field type based on the selected mode.\"\"\"\n        if field_name == \"use_double_brackets\":\n            # Change the template field type based on mode\n            is_mustache = field_value is True\n            if is_mustache:\n                build_config[\"template\"][\"type\"] = FieldTypes.MUSTACHE_PROMPT.value\n            else:\n                build_config[\"template\"][\"type\"] = FieldTypes.PROMPT.value\n\n            # Re-process the template to update variables when mode changes\n            template_value = build_config.get(\"template\", {}).get(\"value\", \"\")\n            if template_value:\n                # Ensure custom_fields is properly initialized\n                if \"custom_fields\" not in build_config:\n                    build_config[\"custom_fields\"] = {}\n\n                # Clean up fields from the OLD mode before processing with NEW mode\n                # This ensures we don't keep fields with wrong syntax even if validation fails\n                old_custom_fields = build_config[\"custom_fields\"].get(\"template\", [])\n                for old_field in list(old_custom_fields):\n                    # Remove the field from custom_fields and template\n                    if old_field in old_custom_fields:\n                        old_custom_fields.remove(old_field)\n                    build_config.pop(old_field, None)\n\n                # Try to process template with new mode to add new variables\n                # If validation fails, at least we cleaned up old fields\n                try:\n                    # Validate mustache templates for security\n                    if is_mustache:\n                        validate_mustache_template(template_value)\n\n                    # Re-process template with new mode to add new variables\n                    _ = process_prompt_template(\n                        template=template_value,\n                        name=\"template\",\n                        custom_fields=build_config[\"custom_fields\"],\n                        frontend_node_template=build_config,\n                        is_mustache=is_mustache,\n                    )\n                except ValueError as e:\n                    # If validation fails, we still updated the mode and cleaned old fields\n                    # User will see error when they try to save\n                    logger.debug(f\"Template validation failed during mode switch: {e}\")\n        return build_config\n\n    async def build_prompt(self) -> Message:\n        use_double_brackets = self.use_double_brackets if hasattr(self, \"use_double_brackets\") else False\n        template_format = \"mustache\" if use_double_brackets else \"f-string\"\n        prompt = await Message.from_template_and_variables(template_format=template_format, **self._attributes)\n        self.status = prompt.text\n        return prompt\n\n    def _update_template(self, frontend_node: dict):\n        prompt_template = frontend_node[\"template\"][\"template\"][\"value\"]\n        use_double_brackets = frontend_node[\"template\"].get(\"use_double_brackets\", {}).get(\"value\", False)\n        is_mustache = use_double_brackets is True\n\n        try:\n            # Validate mustache templates for security\n            if is_mustache:\n                validate_mustache_template(prompt_template)\n\n            custom_fields = frontend_node[\"custom_fields\"]\n            frontend_node_template = frontend_node[\"template\"]\n            _ = process_prompt_template(\n                template=prompt_template,\n                name=\"template\",\n                custom_fields=custom_fields,\n                frontend_node_template=frontend_node_template,\n                is_mustache=is_mustache,\n            )\n        except ValueError as e:\n            # If validation fails, don't add variables but allow component to be created\n            logger.debug(f\"Template validation failed in _update_template: {e}\")\n        return frontend_node\n\n    async def update_frontend_node(self, new_frontend_node: dict, current_frontend_node: dict):\n        \"\"\"This function is called after the code validation is done.\"\"\"\n        frontend_node = await super().update_frontend_node(new_frontend_node, current_frontend_node)\n        template = frontend_node[\"template\"][\"template\"][\"value\"]\n        use_double_brackets = frontend_node[\"template\"].get(\"use_double_brackets\", {}).get(\"value\", False)\n        is_mustache = use_double_brackets is True\n\n        try:\n            # Validate mustache templates for security\n            if is_mustache:\n                validate_mustache_template(template)\n\n            # Kept it duplicated for backwards compatibility\n            _ = process_prompt_template(\n                template=template,\n                name=\"template\",\n                custom_fields=frontend_node[\"custom_fields\"],\n                frontend_node_template=frontend_node[\"template\"],\n                is_mustache=is_mustache,\n            )\n        except ValueError as e:\n            # If validation fails, don't add variables but allow component to be updated\n            logger.debug(f\"Template validation failed in update_frontend_node: {e}\")\n        # Now that template is updated, we need to grab any values that were set in the current_frontend_node\n        # and update the frontend_node with those values\n        update_template_values(new_template=frontend_node, previous_template=current_frontend_node[\"template\"])\n        return frontend_node\n\n    def _get_fallback_input(self, **kwargs):\n        return DefaultPromptField(**kwargs)\n"
-              },
-              "is_refresh": false,
-              "issue_keys": {
-                "advanced": false,
-                "display_name": "issue_keys",
-                "dynamic": false,
-                "field_type": "str",
-                "fileTypes": [],
-                "file_path": "",
-                "info": "",
-                "input_types": [
-                  "Message"
-                ],
-                "list": false,
-                "load_from_db": false,
-                "multiline": true,
-                "name": "issue_keys",
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "type": "str",
-                "value": ""
-              },
-              "template": {
-                "_input_type": "PromptInput",
-                "advanced": false,
-                "display_name": "Template",
-                "dynamic": false,
-                "info": "",
-                "list": false,
-                "list_add_label": "Add More",
-                "name": "template",
-                "override_skip": false,
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_input": true,
-                "track_in_telemetry": false,
-                "type": "prompt",
-                "value": "https://amithhathwar.atlassian.net/rest/api/3/search/jql?jql=key%20in%20({issue_keys})&fields=summary,description,status,priority,issuetype"
-              },
-              "tool_placeholder": {
-                "_input_type": "MessageTextInput",
-                "advanced": true,
-                "display_name": "Tool Placeholder",
-                "dynamic": false,
-                "info": "A placeholder input for tool mode.",
-                "input_types": [
-                  "Message"
-                ],
-                "list": false,
-                "list_add_label": "Add More",
-                "load_from_db": false,
-                "name": "tool_placeholder",
-                "override_skip": false,
-                "placeholder": "",
-                "required": false,
-                "show": false,
-                "title_case": false,
-                "tool_mode": true,
-                "trace_as_input": true,
-                "trace_as_metadata": true,
-                "track_in_telemetry": false,
-                "type": "str",
-                "value": ""
-              },
-              "use_double_brackets": {
-                "_input_type": "BoolInput",
-                "advanced": true,
-                "display_name": "Use Double Brackets",
-                "dynamic": false,
-                "info": "Use {{variable}} syntax instead of {variable}.",
-                "list": false,
-                "list_add_label": "Add More",
-                "name": "use_double_brackets",
-                "override_skip": false,
-                "placeholder": "",
-                "real_time_refresh": true,
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_metadata": true,
-                "track_in_telemetry": true,
-                "type": "bool",
-                "value": false
-              }
-            },
-            "tool_mode": false
-          },
-          "showNode": true,
-          "type": "Prompt Template"
-        },
-        "dragging": false,
-        "id": "Prompt Template-qPGC3",
-        "measured": {
-          "height": 346,
-          "width": 320
-        },
-        "position": {
-          "x": -476.6855938387326,
-          "y": -408.3789487387474
-        },
-        "selected": false,
-        "type": "genericNode"
-      },
-      {
-        "data": {
-          "id": "CustomComponent-YTptE",
+          "id": "JiraSearchParserComponent-mM8dB",
           "node": {
             "base_classes": [
               "Message",
@@ -1372,9 +1159,9 @@
           "type": "JiraSearchParserComponent"
         },
         "dragging": false,
-        "id": "CustomComponent-YTptE",
+        "id": "JiraSearchParserComponent-mM8dB",
         "measured": {
-          "height": 184,
+          "height": 185,
           "width": 320
         },
         "position": {
@@ -1386,7 +1173,7 @@
       },
       {
         "data": {
-          "id": "MistralModel-WBUOf",
+          "id": "MistralModel-IAau6",
           "node": {
             "base_classes": [
               "LanguageModel",
@@ -1811,9 +1598,9 @@
           "type": "MistralModel"
         },
         "dragging": false,
-        "id": "MistralModel-WBUOf",
+        "id": "MistralModel-IAau6",
         "measured": {
-          "height": 452,
+          "height": 453,
           "width": 320
         },
         "position": {
@@ -1825,7 +1612,7 @@
       },
       {
         "data": {
-          "id": "Prompt Template-Vc6Ad",
+          "id": "Prompt Template-NUuDV",
           "node": {
             "base_classes": [
               "Message"
@@ -2009,9 +1796,9 @@
           "type": "Prompt Template"
         },
         "dragging": false,
-        "id": "Prompt Template-Vc6Ad",
+        "id": "Prompt Template-NUuDV",
         "measured": {
-          "height": 346,
+          "height": 347,
           "width": 320
         },
         "position": {
@@ -2023,7 +1810,7 @@
       },
       {
         "data": {
-          "id": "CustomComponent-xZb3w",
+          "id": "LocalDocumentReaderComponent-cCX9J",
           "node": {
             "base_classes": [
               "Message",
@@ -2143,9 +1930,9 @@
           "type": "LocalDocumentReaderComponent"
         },
         "dragging": false,
-        "id": "CustomComponent-xZb3w",
+        "id": "LocalDocumentReaderComponent-cCX9J",
         "measured": {
-          "height": 232,
+          "height": 233,
           "width": 320
         },
         "position": {
@@ -2157,7 +1944,7 @@
       },
       {
         "data": {
-          "id": "note-qqNhW",
+          "id": "note-DAAfM",
           "node": {
             "description": "If PRD is in DOCx or PDF use below",
             "display_name": "",
@@ -2168,7 +1955,7 @@
         },
         "dragging": false,
         "height": 140,
-        "id": "note-qqNhW",
+        "id": "note-DAAfM",
         "measured": {
           "height": 140,
           "width": 280
@@ -2183,7 +1970,7 @@
       },
       {
         "data": {
-          "id": "note-fUssJ",
+          "id": "note-Ndp9f",
           "node": {
             "description": "If PRD is in uploaded in JIRA like epics or User stories",
             "display_name": "",
@@ -2194,14 +1981,14 @@
         },
         "dragging": false,
         "height": 140,
-        "id": "note-fUssJ",
+        "id": "note-Ndp9f",
         "measured": {
           "height": 140,
           "width": 280
         },
         "position": {
           "x": -697.215997641673,
-          "y": -597.153066388616
+          "y": -646.3380094513011
         },
         "selected": false,
         "type": "noteNode",
@@ -2209,7 +1996,7 @@
       },
       {
         "data": {
-          "id": "CustomComponent-hMEdx",
+          "id": "MultiFileWriterComponent-xCuCQ",
           "node": {
             "base_classes": [
               "Message",
@@ -2317,9 +2104,9 @@
           "type": "MultiFileWriterComponent"
         },
         "dragging": false,
-        "id": "CustomComponent-hMEdx",
+        "id": "MultiFileWriterComponent-xCuCQ",
         "measured": {
-          "height": 238,
+          "height": 239,
           "width": 320
         },
         "position": {
@@ -2331,7 +2118,7 @@
       },
       {
         "data": {
-          "id": "ChatOutput-SekZO",
+          "id": "ChatOutput-RqCoB",
           "node": {
             "base_classes": [
               "Message"
@@ -2617,7 +2404,7 @@
           "type": "ChatOutput"
         },
         "dragging": false,
-        "id": "ChatOutput-SekZO",
+        "id": "ChatOutput-RqCoB",
         "measured": {
           "height": 52,
           "width": 192
@@ -2631,7 +2418,7 @@
       },
       {
         "data": {
-          "id": "Prompt Template-zZsPV",
+          "id": "Prompt Template-o7wsQ",
           "node": {
             "base_classes": [
               "Message"
@@ -2815,9 +2602,9 @@
           "type": "Prompt Template"
         },
         "dragging": false,
-        "id": "Prompt Template-zZsPV",
+        "id": "Prompt Template-o7wsQ",
         "measured": {
-          "height": 346,
+          "height": 347,
           "width": 320
         },
         "position": {
@@ -2829,7 +2616,7 @@
       },
       {
         "data": {
-          "id": "MistralModel-vwPFe",
+          "id": "MistralModel-5TZDu",
           "node": {
             "base_classes": [
               "LanguageModel",
@@ -3254,9 +3041,9 @@
           "type": "MistralModel"
         },
         "dragging": false,
-        "id": "MistralModel-vwPFe",
+        "id": "MistralModel-5TZDu",
         "measured": {
-          "height": 452,
+          "height": 453,
           "width": 320
         },
         "position": {
@@ -3268,7 +3055,7 @@
       },
       {
         "data": {
-          "id": "MultiFileWriterComponent-RXZsV",
+          "id": "MultiFileWriterComponent-zM91m",
           "node": {
             "base_classes": [
               "Message",
@@ -3375,9 +3162,9 @@
           "showNode": true,
           "type": "MultiFileWriterComponent"
         },
-        "id": "MultiFileWriterComponent-RXZsV",
+        "id": "MultiFileWriterComponent-zM91m",
         "measured": {
-          "height": 238,
+          "height": 239,
           "width": 320
         },
         "position": {
@@ -3389,7 +3176,7 @@
       },
       {
         "data": {
-          "id": "ChatOutput-8i44d",
+          "id": "ChatOutput-k3sEB",
           "node": {
             "base_classes": [
               "Message"
@@ -3673,7 +3460,7 @@
           "showNode": false,
           "type": "ChatOutput"
         },
-        "id": "ChatOutput-8i44d",
+        "id": "ChatOutput-k3sEB",
         "measured": {
           "height": 52,
           "width": 192
@@ -3684,20 +3471,218 @@
         },
         "selected": false,
         "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "Prompt Template-ctw9h",
+          "node": {
+            "base_classes": [
+              "Message"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {
+              "template": [
+                "Jira_ID"
+              ]
+            },
+            "description": "Create a prompt template with dynamic variables.",
+            "display_name": "Prompt Template",
+            "documentation": "https://docs.langflow.org/components-prompts",
+            "edited": false,
+            "error": null,
+            "field_order": [
+              "template",
+              "use_double_brackets",
+              "tool_placeholder"
+            ],
+            "frozen": false,
+            "full_path": null,
+            "icon": "prompts",
+            "is_composition": null,
+            "is_input": null,
+            "is_output": null,
+            "legacy": false,
+            "lf_version": "1.10.0",
+            "metadata": {
+              "code_hash": "3d3fd7b8a36f",
+              "dependencies": {
+                "dependencies": [
+                  {
+                    "name": "lfx",
+                    "version": null
+                  }
+                ],
+                "total_dependencies": 1
+              },
+              "module": "lfx.components.models_and_agents.prompt.PromptComponent"
+            },
+            "minimized": false,
+            "name": "",
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Prompt",
+                "group_outputs": false,
+                "hidden": null,
+                "loop_types": null,
+                "method": "build_prompt",
+                "name": "prompt",
+                "options": null,
+                "required_inputs": null,
+                "selected": "Message",
+                "tool_mode": true,
+                "types": [
+                  "Message"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "priority": null,
+            "replacement": null,
+            "template": {
+              "Jira_ID": {
+                "advanced": false,
+                "display_name": "Jira_ID",
+                "dynamic": false,
+                "field_type": "str",
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "Jira_ID",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "type": "str",
+                "value": ""
+              },
+              "_type": "Component",
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from typing import Any\n\nfrom lfx.base.prompts.api_utils import process_prompt_template\nfrom lfx.custom.custom_component.component import Component\nfrom lfx.inputs.input_mixin import FieldTypes\nfrom lfx.inputs.inputs import DefaultPromptField\nfrom lfx.io import BoolInput, MessageTextInput, Output, PromptInput\nfrom lfx.log.logger import logger\nfrom lfx.schema.dotdict import dotdict\nfrom lfx.schema.message import Message\nfrom lfx.template.utils import update_template_values\nfrom lfx.utils.mustache_security import validate_mustache_template\n\n\nclass PromptComponent(Component):\n    display_name: str = \"Prompt Template\"\n    description: str = \"Create a prompt template with dynamic variables.\"\n    documentation: str = \"https://docs.langflow.org/components-prompts\"\n    icon = \"prompts\"\n    trace_type = \"prompt\"\n    name = \"Prompt Template\"\n\n    inputs = [\n        PromptInput(name=\"template\", display_name=\"Template\"),\n        BoolInput(\n            name=\"use_double_brackets\",\n            display_name=\"Use Double Brackets\",\n            value=False,\n            advanced=True,\n            info=\"Use {{variable}} syntax instead of {variable}.\",\n            real_time_refresh=True,\n        ),\n        MessageTextInput(\n            name=\"tool_placeholder\",\n            display_name=\"Tool Placeholder\",\n            tool_mode=True,\n            advanced=True,\n            show=False,\n            info=\"A placeholder input for tool mode.\",\n        ),\n    ]\n\n    outputs = [\n        Output(display_name=\"Prompt\", name=\"prompt\", method=\"build_prompt\"),\n    ]\n\n    def update_build_config(self, build_config: dotdict, field_value: Any, field_name: str | None = None) -> dotdict:\n        \"\"\"Update the template field type based on the selected mode.\"\"\"\n        if field_name == \"use_double_brackets\":\n            # Change the template field type based on mode\n            is_mustache = field_value is True\n            if is_mustache:\n                build_config[\"template\"][\"type\"] = FieldTypes.MUSTACHE_PROMPT.value\n            else:\n                build_config[\"template\"][\"type\"] = FieldTypes.PROMPT.value\n\n            # Re-process the template to update variables when mode changes\n            template_value = build_config.get(\"template\", {}).get(\"value\", \"\")\n            if template_value:\n                # Ensure custom_fields is properly initialized\n                if \"custom_fields\" not in build_config:\n                    build_config[\"custom_fields\"] = {}\n\n                # Clean up fields from the OLD mode before processing with NEW mode\n                # This ensures we don't keep fields with wrong syntax even if validation fails\n                old_custom_fields = build_config[\"custom_fields\"].get(\"template\", [])\n                for old_field in list(old_custom_fields):\n                    # Remove the field from custom_fields and template\n                    if old_field in old_custom_fields:\n                        old_custom_fields.remove(old_field)\n                    build_config.pop(old_field, None)\n\n                # Try to process template with new mode to add new variables\n                # If validation fails, at least we cleaned up old fields\n                try:\n                    # Validate mustache templates for security\n                    if is_mustache:\n                        validate_mustache_template(template_value)\n\n                    # Re-process template with new mode to add new variables\n                    _ = process_prompt_template(\n                        template=template_value,\n                        name=\"template\",\n                        custom_fields=build_config[\"custom_fields\"],\n                        frontend_node_template=build_config,\n                        is_mustache=is_mustache,\n                    )\n                except ValueError as e:\n                    # If validation fails, we still updated the mode and cleaned old fields\n                    # User will see error when they try to save\n                    logger.debug(f\"Template validation failed during mode switch: {e}\")\n        return build_config\n\n    async def build_prompt(self) -> Message:\n        use_double_brackets = self.use_double_brackets if hasattr(self, \"use_double_brackets\") else False\n        template_format = \"mustache\" if use_double_brackets else \"f-string\"\n        prompt = await Message.from_template_and_variables(template_format=template_format, **self._attributes)\n        self.status = prompt.text\n        return prompt\n\n    def _update_template(self, frontend_node: dict):\n        prompt_template = frontend_node[\"template\"][\"template\"][\"value\"]\n        use_double_brackets = frontend_node[\"template\"].get(\"use_double_brackets\", {}).get(\"value\", False)\n        is_mustache = use_double_brackets is True\n\n        try:\n            # Validate mustache templates for security\n            if is_mustache:\n                validate_mustache_template(prompt_template)\n\n            custom_fields = frontend_node[\"custom_fields\"]\n            frontend_node_template = frontend_node[\"template\"]\n            _ = process_prompt_template(\n                template=prompt_template,\n                name=\"template\",\n                custom_fields=custom_fields,\n                frontend_node_template=frontend_node_template,\n                is_mustache=is_mustache,\n            )\n        except ValueError as e:\n            # If validation fails, don't add variables but allow component to be created\n            logger.debug(f\"Template validation failed in _update_template: {e}\")\n        return frontend_node\n\n    async def update_frontend_node(self, new_frontend_node: dict, current_frontend_node: dict):\n        \"\"\"This function is called after the code validation is done.\"\"\"\n        frontend_node = await super().update_frontend_node(new_frontend_node, current_frontend_node)\n        template = frontend_node[\"template\"][\"template\"][\"value\"]\n        use_double_brackets = frontend_node[\"template\"].get(\"use_double_brackets\", {}).get(\"value\", False)\n        is_mustache = use_double_brackets is True\n\n        try:\n            # Validate mustache templates for security\n            if is_mustache:\n                validate_mustache_template(template)\n\n            # Kept it duplicated for backwards compatibility\n            _ = process_prompt_template(\n                template=template,\n                name=\"template\",\n                custom_fields=frontend_node[\"custom_fields\"],\n                frontend_node_template=frontend_node[\"template\"],\n                is_mustache=is_mustache,\n            )\n        except ValueError as e:\n            # If validation fails, don't add variables but allow component to be updated\n            logger.debug(f\"Template validation failed in update_frontend_node: {e}\")\n        # Now that template is updated, we need to grab any values that were set in the current_frontend_node\n        # and update the frontend_node with those values\n        update_template_values(new_template=frontend_node, previous_template=current_frontend_node[\"template\"])\n        return frontend_node\n\n    def _get_fallback_input(self, **kwargs):\n        return DefaultPromptField(**kwargs)\n"
+              },
+              "template": {
+                "_input_type": "PromptInput",
+                "advanced": false,
+                "display_name": "Template",
+                "dynamic": false,
+                "info": "",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "template",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "track_in_telemetry": false,
+                "type": "prompt",
+                "value": "https://jaivir.atlassian.net/rest/api/3/search/jql?jql=key%20in%20({Jira_ID})&fields=summary,description,status,priority,issuetype"
+              },
+              "tool_placeholder": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Tool Placeholder",
+                "dynamic": false,
+                "info": "A placeholder input for tool mode.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "tool_placeholder",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": false,
+                "title_case": false,
+                "tool_mode": true,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": ""
+              },
+              "use_double_brackets": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Use Double Brackets",
+                "dynamic": false,
+                "info": "Use {{variable}} syntax instead of {variable}.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "use_double_brackets",
+                "override_skip": false,
+                "placeholder": "",
+                "real_time_refresh": true,
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": true,
+                "type": "bool",
+                "value": false
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "Prompt Template"
+        },
+        "dragging": false,
+        "id": "Prompt Template-ctw9h",
+        "measured": {
+          "height": 347,
+          "width": 320
+        },
+        "position": {
+          "x": -522.9999690946212,
+          "y": -413.6969593046463
+        },
+        "selected": false,
+        "type": "genericNode"
       }
     ],
     "viewport": {
-      "x": 360.1612386721192,
-      "y": 327.2172602732733,
-      "zoom": 0.406502875845844
+      "x": 302.7666924261189,
+      "y": 339.4878306297069,
+      "zoom": 0.34563423156419837
     }
   },
   "description": "Text Generation Meets Business Transformation.",
   "endpoint_name": null,
-  "id": "477be9a4-7dc6-4610-a321-3e56015fd3e0",
+  "id": "2a014bac-cd3b-4de4-a417-4cf00e33d238",
   "is_component": false,
   "last_tested_version": "1.10.0",
   "locked": false,
-  "name": "Test-Plan-Creator",
+  "name": "Test Strategy And Test Plan Creator",
   "tags": []
 }
